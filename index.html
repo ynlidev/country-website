@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="China home page." />
-    <title>China</title>
-    <link rel="stylesheet" href="styles/normalize-fwd.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="China home page." />
+  <title>China</title>
+  <link rel="stylesheet" href="styles/normalize-fwd.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
 
     <!-- favicon -->
-    <link rel="icon" href="favicons/favicon.ico" sizes="any" />
-    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png" />
+    <link rel="icon" href="favicons/favicon.ico" sizes="any"> 
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png"/>
     <link rel="manifest" href="favicons/site.webmanifest" />
-    <!-- scripts -->
-    <script defer src="scripts/script.js"></script>
-  </head>
-  <body>
+
+  <!-- scripts -->
+  <script defer src="script/navigation.js"></script>
+  <!-- link favicons -->
+</head>
+
+<body>
+  <div class="home-page">
     <header class="site-header">
+      <a href="index.html" class="site-logo">
+        <img src="favicons/favicon.svg" alt="cat logo" />
+      </a>
+ 
       <nav class="site-navigation" id="site-navigation">
-        <img src="favicons/favicon.svg" alt="" />
+        <img src="favicons/favicon.svg" alt="">
 
         <button
           class="menu-toggle"
@@ -50,12 +59,15 @@
       </nav>
     </header>
     <main class="site-content">
-    <video class="video-hero" src="videos/China-city-and-road.mp4" muted autoplay loop playsinline></video>
-        <h1>China</h1>
-        </section>
-      </main>
-      <footer class="site-footer">
-        <p>&copy; FWD 2024 - Yining Li</p>
-      </footer>
-  </body>
+      <!-- <section class="section-hero"> -->
+      <video class="video-hero" src="videos/China-city-and-road.mp4" muted autoplay loop playsinline></video>
+      <h1>China</h1>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; FWD 2024 - Yining Li</p>
+    </footer>
+  </div>
+</body>
 </html>
+
