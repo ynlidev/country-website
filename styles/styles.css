@@ -21,129 +21,326 @@
 --------------------------------------------------------------*/
 
 /* Typography
---------------------------------------------- */
+  --------------------------------------------- */
 body {
-
+  background-color: #fcfbfd;
+  font-size: 1rem;
+  color: #0c0c0c;
+  line-height: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 
-p {
-
+h1 {
+  color: rgb(151, 7, 7);
+  position: fixed;
+  right: 0;
+  bottom: 4rem;
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
-
-/* Elements
---------------------------------------------- */
-ul {
-
-}
-
-ol {
-
-}
-
-dl {
-
-}
-
-figure {
-
-}
-
-table {
-
+@media (min-width: 48em) {
+  h1 {
+    bottom: 0;
+    margin-right: 1rem;
+  }
 }
 
 /* Links
---------------------------------------------- */
+  --------------------------------------------- */
 a {
-
+  text-decoration: none;
+  color: white;
 }
 
 a:visited {
-
+  color: rgb(247, 244, 244);
 }
 
+a:focus,
 a:hover {
-
-}
-
-a:focus {
-
+  background-color: rgb(247, 113, 51);
+  color: rgb(162, 69, 250);
 }
 
 a:active {
-
+  background-color: rgb(247, 113, 51);
+  color: rgb(162, 69, 250);
 }
 
-
 /*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
+  # Components
+  --------------------------------------------------------------*/
 
+/* Header
+  --------------------------------------------- */
+/* Home Page */
 
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-
-/* Header 
---------------------------------------------- */
-//main header styles
-
-.home header {
-	kjfhakjfhsak
+.site-header {
+  background-color: #241703;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.cuisine header {
+.site-logo {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+}
 
+.site-navigation ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  background-color: #0c0c0c;
+}
+
+.site-navigation ul {
+  display: none;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #251909;
+  padding: 0;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.menu-toggle {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+  fill: #f7f6f6;
+}
+
+.menu-toggle:focus {
+  border: 0;
+  outline: 2px dotted;
+}
+
+.site-navigation.toggled ul {
+  display: block;
+}
+
+@media (min-width: 50rem) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-navigation {
+    padding: 0 1rem;
+    flex: 1 1 auto;
+  }
+
+  .site-navigation ul,
+  .site-navigation.toggled ul {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    top: 0;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .site-navigation a {
+    line-height: 4.5rem;
+    padding: 0 1rem;
+  }
 }
 
 /* Main
---------------------------------------------- */
-/* Specific styles for each page go here */
+  --------------------------------------------- */
+
+.section-header img {
+  object-fit: contain;
+  object-position: top;
+  display: block;
+}
 
 /* Home Page */
 
-/* Section 1 */
+.video-hero {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
+  margin: 0 auto;
+}
 
-//basic styles mobile 
+form {
+  max-width: 400px;
+  align-items: center;
+  padding: 1rem;
+}
 
-@media 
+.number {
+  border-radius: 50%;
+  background-color: rgb(255, 147, 47);
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 2;
+}
 
-/* Section 2 */
-//basic styles mobile 
+@media (min-width: 50em) {
+  h1 {
+    font-size: 4rem;
+  }
+  .site-navigation img {
+    width: 3rem;
+  }
+  .nav-menu {
+    font-size: 1rem;
+    margin: auto;
+  }
+}
 
-@media 
+/* Cities */
 
-/* History Page */
+.section-cities {
+  padding: 3rem 0;
+  display: inline-block;
+  justify-content: space-around;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-/* Section 1 */
-//basic styles mobile 
+.section-cities article {
+  box-shadow: 0 0 4px 3px rgb(233, 105, 31);
+  margin: 3rem;
+  max-width: 28rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  padding-top: 1rem;
+}
 
-@media 
+@media (min-width: 50em) {
+  .section-cities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-/* Culture Page */
+  .section-cities article {
+    padding: 2rem;
+  }
+}
+
+/* Cuisine */
+
+.section-cuisine {
+  padding: 2rem 0.5rem;
+}
+.section-cuisine h2 {
+  margin-bottom: 0.5rem;
+}
+.section-cuisine p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.section-cuisine article {
+  box-shadow: 0 0 4px 3px rgb(233, 105, 31);
+  color: black;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 50em) {
+  .section-cuisine {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section-header img {
+    height: 100vh;
+    width: 250vh;
+    object-fit: cover;
+  }
+}
 
 /* Credits Page */
 
-/* desktop  */
-@media (min-width:50em) {
-
-
+caption {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  align-items: center;
 }
 
+table {
+  box-shadow: 0 0 2px 2px rgb(233, 105, 31);
+  border-radius: 4px;
+  margin: 2rem 0;
+  align-items: center;
+  text-align: center;
+}
+th,
+tr,
+td {
+  box-shadow: 0 0 1px 1px rgb(233, 105, 31);
+  padding: 1rem 0;
+}
 
+.section-credits-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4rem;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: bisque;
+  text-align: center;
+}
+
+.section-credits-table a,
+.section-credits-table a:visited {
+  color: rgb(10, 10, 10);
+}
+
+.section-credits-table a:hover,
+.section-credits-table a:active,
+.section-credits-table a:focus {
+  background-color: rgb(214, 119, 30);
+}
+
+@media (min-width: 50em) {
+  .section-credits-table {
+    max-width: 60rem;
+  }
+  td {
+    padding: 1rem;
+  }
+}
+
+/* desktop  */
+@media (min-width: 50em) {
+}
 
 /* Footer
 --------------------------------------------- */
- Binary file addedBIN +29.8 MB 
-videos/China-city-and-road.mp4
+.site-footer p {
+  text-align: center;
+  color: white;
+  background-color: #241703;
+  padding: 2rem;
+  margin: 0;
+}

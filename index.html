@@ -8,6 +8,12 @@
   <title>China</title>
   <link rel="stylesheet" href="styles/normalize-fwd.css" />
   <link rel="stylesheet" href="styles/styles.css" />
+ 
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" href="favicons/favicon.ico" sizes="any"> 
@@ -16,19 +22,19 @@
     <link rel="manifest" href="favicons/site.webmanifest" />
 
   <!-- scripts -->
-  <script defer src="script/navigation.js"></script>
-  <!-- link favicons -->
+  <script defer src="scripts/navigation.js"></script>
+  
 </head>
 
 <body>
-  <div class="home-page">
+  <div class="section-home">
     <header class="site-header">
       <a href="index.html" class="site-logo">
         <img src="favicons/favicon.svg" alt="cat logo" />
       </a>
  
       <nav class="site-navigation" id="site-navigation">
-        <img src="favicons/favicon.svg" alt="">
+        
 
         <button
           class="menu-toggle"
@@ -54,15 +60,34 @@
           <li><a href="cities.html">Cities</a></li>
           <li><a href="cuisine.html">Cuisine</a></li>
           <li><a href="credits.html">Credits</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          
         </ul>
       </nav>
     </header>
     <main class="site-content">
-      <!-- <section class="section-hero"> -->
+     
       <video class="video-hero" src="videos/China-city-and-road.mp4" muted autoplay loop playsinline></video>
       <h1>China</h1>
       </section>
+
+      <form action="#" method="post">
+        <h2>Contact Us</h2>
+        <fieldset>
+          <legend>
+            <span class="number">1</span>
+            Your basic info
+          </legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user-name" /><br><br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="user-email" /><br><br>
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="user-phone" /><br><br>
+
+          <input type="submit" value="Submit!" />
+       
+          
+        </fieldset>
     </main>
     <footer class="site-footer">
       <p>&copy; FWD 2024 - Yining Li</p>
