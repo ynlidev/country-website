@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
@@ -204,6 +204,9 @@ form {
 @media (min-width: 50em) {
   h1 {
     font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
   }
   .site-navigation img {
     width: 3rem;
