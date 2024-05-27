@@ -38,15 +38,25 @@ h2 {
 
 h1 {
   position: absolute;
-  bottom: 20%;
+  bottom: 40%;
   border-radius: 15px;
   backdrop-filter: blur(10px);
   color: rgb(245, 243, 243);
   /* position: fixed; */
   right: 0;
-  bottom: 4rem;
+
   margin-right: 1rem;
   font-size: 2rem;
+}
+
+.site-content h1 {
+  bottom: -15%;
+}
+
+@media (min-width: 50rem) {
+  h1 {
+    bottom: -10rem;
+  }
 }
 
 /* Links
