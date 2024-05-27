@@ -38,11 +38,11 @@ h2 {
 
 h1 {
   position: absolute;
-  bottom: 40%;
+  bottom: 50%;
   border-radius: 15px;
   backdrop-filter: blur(10px);
   color: rgb(245, 243, 243);
-  /* position: fixed; */
+
   right: 0;
 
   margin-right: 1rem;
@@ -50,12 +50,24 @@ h1 {
 }
 
 .site-content h1 {
+  bottom: -18%;
+}
+
+.cities .credits h1 {
   bottom: -15%;
+}
+
+.cuisine h1 {
+  bottom: 50%;
 }
 
 @media (min-width: 50rem) {
   h1 {
-    bottom: -10rem;
+    bottom: -8rem;
+  }
+
+  .cuisine h1 {
+    bottom: -20%;
   }
 }
 
@@ -284,9 +296,9 @@ form {
     width: 250vh;
     object-fit: cover;
   }
-  .section-cuisine article {
+  /* .section-cuisine article {
     padding: 3rem;
-  }
+  } */
 }
 
 /* Credits Page */
@@ -341,10 +353,6 @@ td {
   td {
     padding: 1rem;
   }
-}
-
-/* desktop  */
-@media (min-width: 50em) {
 }
 
 /* Footer
