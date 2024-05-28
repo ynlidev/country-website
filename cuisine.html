@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="China cuisine page." />
+    <title>Cuisine - China</title>
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" href="favicons/favicon.ico" sizes="any" />
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+
+    <!-- scripts -->
+    <script async src="scripts/navigation.js"></script>
+  </head>
+  <body>
+    <div class="cuisine">
+      <header class="site-header">
+        <a href="index.html" class="site-logo">
+          <img src="favicons/favicon.svg" alt="cat logo" />
+        </a>
+
+        <nav class="site-navigation" id="site-navigation">
+          <button
+            class="menu-toggle"
+            aria-controls="header-menu"
+            aria-expanded="false"
+            aria-label="Menu Toggle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+            >
+              <title>Menu Icon</title>
+              <path
+                d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
+              ></path>
+            </svg>
+          </button>
+
+          <ul class="nav-menu" id="header-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cities.html">Cities</a></li>
+            <li><a href="cuisine.html">Cuisine</a></li>
+            <li><a href="credits.html">Credits</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="site-content">
+        <header class="section-header">
+          <img
+            class="cuisine-img"
+            src="images/cuisine/pexels-angela-roma-7363743.jpg"
+            alt="This is food picture."
+          />
+          <h1>Cuisine</h1>
+        </header>
+        <div id="section-cuisine" class="section-cuisine">
+          <article>
+            <h2>Hot Pot</h2>
+            <img
+              src="images/cuisine/chongqing-6764965_1280.jpg"
+              alt="This is a picture of Hot Pot"
+            />
+          </article>
+
+          <article>
+            <h2>Dumpling</h2>
+            <img
+              src="images/cuisine/dumpling-3765243_1280.jpg"
+              alt="This is a picture of dumpling."
+            />
+          </article>
+          <article>
+            <h2>Sichuan Boiled Fish</h2>
+            <img
+              src="images/cuisine/sichuan-boiled-fish-6368450_1280.jpg"
+              alt="This is a picture of sichuan-boiled-fish."
+            />
+          </article>
+
+          <article>
+            <h2>Chinese Meats</h2>
+            <img
+              src="images/cuisine/chinese-food-8119421_1280.jpg"
+              alt="This is a picture of Chinese-meats"
+            />
+          </article>
+
+          <article>
+            <h2>Tanghulu</h2>
+            <img
+              src="images/cuisine/snack-5399443_1280.jpg"
+              alt="This is a picture of Tanghulu"
+            />
+          </article>
+
+          <article>
+            <h2>Snack Street</h2>
+            <img
+              src="images/cuisine/pexels-elevate-1267320.jpg"
+              alt="This is a picture of Snack Street."
+            />
+          </article>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <p>&copy; FWD 2024 - Yining Li</p>
+      </footer>
+    </div>
+  </body>
+</html>
